@@ -1,0 +1,90 @@
+body {
+ background-color: #f2f4f5;
+ margin: 0;
+}
+
+main{
+ width: 80%;
+ display: table;
+ margin: 100px auto 0 auto;
+}
+
+/* cards */
+
+.card-container{
+ width: 400px;
+ display: block;
+ margin: 30px 30px 0 0;
+ float: left;
+}
+
+.card{
+ width: 100%;
+ display: table;
+ background-color: #fff;
+ border-radius: 8px;
+ box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+ padding: 15px;
+ box-sizing: border-box;
+}
+.card .card-image{
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+ border-radius: 6px;
+ display: block;
+ margin: auto;
+}
+
+.card .card-image-top{
+  margin-top: -55px;
+}
+
+.card .card-body{
+ width: 100%;
+ display: table;
+ margin-top: 12px;
+}
+
+.card .card-body h1{
+ font-family: Arial black, Helvetica, sans-serif;
+ font-size: 21px;
+ line-height: 21px;
+ color: #9013fe;
+ margin: 0;
+ text-align: center;
+ margin-bottom: 12px;
+}
+
+.card.card-body p{
+ display: block;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ line-height: 14px;
+ color: black;
+ font-weight: 800;
+ margin: 15px 0 10px 0;
+}
+
+.card .card-footer .btn{
+ width: 100%;
+}
+/* botoes */
+
+.btn{
+ width: auto;
+ display: table;
+ height: 40px;
+ background-color: #39e493;
+ color: #fff;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size: 16px;
+ text-transform: uppercase;
+ text-align: center;
+ line-height: 40px;
+ text-decoration: none;
+ margin-top: 12;
+ padding: 0 30px;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
