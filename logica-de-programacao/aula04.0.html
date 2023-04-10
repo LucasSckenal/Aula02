@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <h1>Lógica de programação com Javascript</h1>
+    <button onclick="RealizarConta()">Realizar a conta</button>
+    <button onclick="Limpar()">Limpar</button>
+
+    <script>
+      function RealizarConta() {
+        var n = prompt("digite um numero");
+        n = parseFloat(n);
+        Limpar();
+        for (var i = 1; i <= 1000; i++) {
+          mensagem += n + " x " + i + "=" + n * i + "<br>";
+        }
+        output.innerHTML = mensagem;
+      }
+      function Limpar() {
+        mensagem = "";
+        output.HTML;
+      }
+      var output = document.querySelector("#output");
+      var mensagem = "";
+    </script>
+  </body>
+</html>

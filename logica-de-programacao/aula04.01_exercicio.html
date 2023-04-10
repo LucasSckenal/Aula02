@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lógica de programação com Javascript</h1>
+    <button onclick="mais()">+</button>
+    <button onclick="menos()">-</button>
+    <button onclick="mut()">x</button>
+    <button onclick="div()">-</button>
+
+    <div id="output"></div>
+    <script>
+      var n = parseFloat(prompt("digite um numero"));
+      escreve();
+      function escreve() {
+        var output = document.querySelector("#output");
+        output.innerHTML = n;
+      }
+
+      function mais() {
+        var soma = parseFloat(prompt("digite outro numero"));
+        n = soma + n;
+        escreve();
+      }
+      function menos() {
+        var menos = parseFloat(prompt("digite outro numero"));
+        n = n - menos;
+        escreve();
+      }
+      function mut() {
+        var mut = parseFloat(prompt("digite outro numero"));
+        n = n * mut;
+        escreve();
+      }
+      function div() {
+        var div = parseFloat(prompt("digite outro numero"));
+        n = n / div;
+        escreve();
+      }
+    </script>
+  </body>
+</html>
