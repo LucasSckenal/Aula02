@@ -4,7 +4,7 @@
 <br />
 <div align="center">
     <img align="center" alt="Logo" width="80" height="80"" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <h3 align="center">Projeto de estudo de front-end focado em HTML e css</h3>
+  <h3 align="center">Projeto de estudo de front-end focado em HTML e CSS</h3>
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
