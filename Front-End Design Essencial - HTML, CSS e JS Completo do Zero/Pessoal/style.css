@@ -1,0 +1,143 @@
+body {
+ background-color:#f2f4f5 ;
+ margin: 0;
+ width: 100vw;
+ height: 100vh;
+}
+main{
+ width: 1000px;
+ display: table;
+ background-color: #fff;
+ border-radius: 8px;
+ margin-top: 30px;
+ margin-left: auto;
+ margin-right: auto;
+ box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+} 
+
+header .topbar { 
+ background-image: linear-gradient(to left, #fa0202, rgb(128, 0, 248));
+ display: block;
+ width: 100%;
+ height: 120px;
+ border-bottom: 1px solid #ad1975;
+ margin-bottom: 20px; 
+} 
+ 
+@media only screen  and (min-width: 554px) {
+  .title {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   color: #c51676;
+   text-align: left;
+   padding: 0;
+   display: block;
+   box-sizing: border-box;
+   margin-top: 0;
+  }
+}
+
+@media only screen and (min-width:992px) {
+ .title {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ color: #c51676;
+ text-align: left; 
+ padding: 0;
+ }
+}
+
+.title h1{
+ padding: 0;
+ margin: 0;
+}
+.logo {
+ margin: 0 ;
+ display: table;
+ height: auto;
+ padding: 0;
+  top: 5%;
+  right: 50%;
+}
+.search-box{
+ position: absolute;
+ top: 5%;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 20%;
+ height: 40px;
+ background-color: #fff;
+ border-radius: 40px;
+ padding: 10px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.search-txt{
+ border: none;
+ background: none;
+ outline: none;
+ padding: 0;
+ font-size: 16px;
+ line-height: 40px;
+
+}
+
+.search-btn{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.box-container{
+  width: 100px;
+ display:table;
+ margin-left: 25px;
+ margin-top: 25px;
+ margin-bottom: 25px;
+ float: left;
+}
+.large-box{
+ width: auto;
+ max-width: 1920px;
+ height: 5%;
+ display:table;
+ border-radius: 50px;
+ border: none;
+ box-sizing: border-box;
+ align-items: relative;
+ flex-basis: 100%;
+}
+.box{
+width: 100%;
+ height: 200px;
+ display:block;
+ border-radius: 10px;
+ box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+ border: 4px solid #9013fe;
+ box-sizing: border-box;
+}
+
+.btn {
+ width: 300px;
+ height: 45px;
+ background-image: linear-gradient(to left, #fa0202, rgb(128, 0, 248));
+ border-radius: 4px;
+ display: block;
+ margin-top: 25px;
+}
+
+.large-box div{
+  margin-top: 25px;
+  border: 4px solid #9013fe;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+}
+.large-box .large-img{
+  width: 100%;
+ height: 100%;
+ border-radius: 50px;
+}
