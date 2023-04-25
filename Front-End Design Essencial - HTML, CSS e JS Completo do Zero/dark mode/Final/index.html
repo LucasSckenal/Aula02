@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Web-test login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn"></div>
+    </div>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2 class="h2">Login</h2>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" required />
+              <label for="">Email</label>
+            </div>
+            <div class="inputebox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="forget">
+              <label for=""
+                ><input type="checkbox" />Remember Me
+                <a href="#">Forget Password</a></label
+              >
+            </div>
+            <button class="button"><p>Log in</p></button>
+            <div class="register">
+              <p>Don't have a account <a href="#">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
+  </body>
+  <script>
+    const btn = document.querySelector(".btn");
+    const container = document.querySelector(".container");
+    const section = document.querySelector("section");
+    const inpubox = document.querySelector(".inputbox");
+    const formvalue = document.querySelector(".form-value");
+    const formbox = document.querySelector(".form-box");
+    const forget = document.querySelector(".forget");
+    const register = document.querySelector(".register");
+    const h2 = document.querySelector(".h2");
+    const inputebox = document.querySelector(".inputebox");
+    const button = document.querySelector(".button");
+    btn.onclick = () => {
+      btn.classList.toggle("active");
+      container.classList.toggle("active");
+      section.classList.toggle("active");
+      formvalue.classList.toggle("active");
+      formbox.classList.toggle("active");
+      inpubox.classList.toggle("active");
+      forget.classList.toggle("active");
+      register.classList.toggle("active");
+      h2.classList.toggle("active");
+      inputebox.classList.toggle("active");
+      button.classList.toggle("active");
+    };
+  </script>
+</html>

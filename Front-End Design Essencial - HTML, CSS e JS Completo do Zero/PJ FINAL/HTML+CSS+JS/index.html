@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,400i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Lucas Sckenal - UX/UI Designer</title>
+</head>
+
+<body>
+
+    <div class="pj-preloader">
+        <div class="pj-preloader-inner">
+            <img src="images/lemon-loader.svg" class="pj-mar-bottom-15" />
+            <p class="pj-text-light pj-mar-top-15">Aguarde um pouquinho ... Estou preparando o Site</p>
+        </div>
+    </div>
+    <div class="pj-overlay"></div>
+
+    <div class="pj-modal pj-bg-black">
+        <div class="pj-modal-header">
+            <h1 class="pj-title pj-text-purple"></h1>
+        </div>
+    </div>
+
+    <div class="pj-overlay pj-toggle-modal"></div>
+
+    <div class="pj-modal pj-bg-black" id="pj-modal-orcamento">
+        <div class="pj-modal-header">
+            <h1 class="pj-title pj-text-light-purple">
+                Solicite um orçamento
+            </h1>
+
+            <button class="pj-close-modal pj-toggle-modal">
+                X
+            </button>
+        </div>
+
+        <div class="pj-modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="pj-text-light">Por favor informe os dados abaixo e eu entrarei em contato com você o mais
+                        breve
+                        possível.</p>
+                </div>
+            </div>
+            <div class="row pj-mar-top-15">
+                <div class="col-sm-12">
+                    <form class="pj-form">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 pj-mar-bottom-15">
+                                <label for="Nome" class="pj-text-light">Nome</label>
+                                <input type="text" name="Nome" id="pj-nome" class="pj-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 pj-mar-bottom-15">
+                                <label for="Email" class="pj-text-light">Email</label>
+                                <input type="email" name="Email" id="pj-email" class="pj-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 pj-mar-bottom-15">
+                                <label for="Telefone" class="pj-text-light">Telefone</label>
+                                <input type="tel" name="Telefone" id="pj-telefone" class="pj-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 pj-mar-bottom-15">
+                                <label for="Site" class="pj-text-light">Site</label>
+                                <input type="text" name="Site" id="pj-site" class="pj-field" />
+                            </div>
+                            <div class="col-sm-12 col-md-12 pj-mar-top-15 pj-mar-bottom-15">
+                                <label for="Mensagem" class="pj-text-light">Descreva abaixo o projeto na qual você
+                                    precisa de orçamento:</label>
+                                <textarea id="pj-mensagem" name="Mensagem" rows="8" class="pj-textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-end pj-mar-top-15">
+                            <div class="col-sm-12 col-md-6">
+                                <button class="pj-btn pj-btn-large pj-btn-purple pj-btn-block">Enviar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="pj-topbar">
+        <div class="pj-logo">
+            <img src="images/logo.svg" alt="Logo João Lemon UX/UI Designer" />
+        </div>
+
+        <nav class="pj-menu">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <div class="pj-contact-info pj-bg-black pj-text-light">
+        <div class="pj-contact-info-inner">
+            <h2 class="pj-title pj-text-purple">Contato</h2>
+            <p>lucaspsckenal@gmail.com</p>
+            <p>+55 (00) 9 9999 8888</p>
+            <div class="pj-social-links">
+                <a href="#" class="pj-social">
+                    <img src="images/icon-instagram.svg" alt="Instagram" />
+                </a>
+                <a href="#" class="pj-social">
+                    <img src="images/icon-twitter.svg" alt="Twitter" />
+                </a>
+                <a href="#" class="pj-social">
+                    <img src="images/icon-github.svg" alt="github" />
+                </a>
+            </div>
+        </div>
+        <div class="pj-corner">
+        </div>
+
+    </div>
+
+    <button class="pj-btn-contact">
+
+    </button>
+
+    <div class="pj-page-wrapper">
+
+        <section class="pj-full-height pj-first-section" id="pj-home-presentation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 offset-md-2 pj-display-text">
+
+                        <h1 class="pj-title pj-text-purple pj-title-big ">Olá!</h1>
+
+                        <p class="pj-text-light">
+                            Meu nome é
+                            <span class="pj-text-light-purple">Lucas Sckenal</span>, Sou
+                            Desenvolvedor de
+                            <span class="pj-text-light-purple"> Front-end </span> Nulla
+                            vulputate, ex in tincidunt consequat, dui metus luctus purus, ut
+                            dapibus quam augue sit amet leo. Phasellus sit amet purus in
+                            elit efficitur viverra.
+                        </p>
+                        <button class="pj-btn pj-btn-large pj-btn-purple pj-mar-top-15 pj-toggle-modal">solicite um
+                            orçamento</button>
+                    </div>
+                </div>
+
+                <div class="pj-scroll-down">
+                    <div class="pj-arrow-down">
+                        <img src="images/arrow-down.svg" alt="Role a Página" />
+                    </div>
+                </div>
+        </section>
+
+        <section class="pj-full-height" id="pj-home-portfolio">
+            <div class="container-fluid pj-no-padding">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="pj-portfolio-navigator">
+                            <div class="pj-navigator-counter">
+                                <span class="pj-text-light-purple">01</span>
+                            </div>
+                            <nav class="pj-item-navigator">
+                                <a href="#" class="pj-item-active"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </nav>
+                            <div class="pj-items-next-prev pj-no-radius-left">
+                                <div class="pj-item-prev">
+                                    <ion-icon name="arrow-dropleft"></ion-icon>
+                                </div>
+
+                                <div class="pj-items-counter">
+                                    <span>01</span>/<span>05</span>
+                                </div>
+
+                                <div class="pj-item-next">
+                                    <ion-icon name="arrow-dropright"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-10">
+                        <div class="pj-slider-container pj-full-height">
+                            <ul class="pj-slider-list">
+                                <li class="pj-slider-item red">
+
+                                </li>
+                                <li class="pj-slider-item yellow">
+
+                                </li>
+                                <li class="pj-slider-item blue">
+
+                                </li>
+                                <li class="pj-slider-item purple">
+
+                                </li>
+                                <li class="pj-slider-item green">
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

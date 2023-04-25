@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #fff;
+  color: #333;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.dark-mode section {
+  background-color: #333;
+}
+
+/* Form styles */
+.form-box {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+
+.form-box.dark-mode {
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.form-value {
+  padding: 2rem;
+}
+
+.form-value h2 {
+  margin-bottom: 1rem;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.inputbox ion-icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1rem;
+}
+
+.dark-mode .inputbox input {
+  border-bottom: 2px solid #eee;
+  color: #fff;
+}
+
+.inputbox input:focus {
+  outline: none;
+  border-bottom-color: #333;
+}
+
+.forget {
+  margin-bottom: 1rem;
+}
+
+.forget label {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.forget a {
+  margin-left: auto;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode button {
+  background-color: #fff;
+  color: #333;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.register {
+  text-align: center;
+}
+
+.register p {
+  font-size: 0.8rem;
+}
+
+.register a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.dark-mode .register a {
+  color: #fff;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  .form-value {
+    padding: 1rem;
+  }
+}

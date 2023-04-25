@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header button {
+  background-color: #202020;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header button .icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+header button .icon.moon {
+  transform: translateY(-20px);
+}
+
+body.dark-mode {
+  background-color: #202020;
+  color: #fff;
+}
+
+body.dark-mode header {
+  background-color: #fff;
+  color: #202020;
+}
+
+body.dark-mode header button .icon.sun {
+  transform: translateY(-20px);
+}
+
+body.dark-mode header button .icon.moon {
+  transform: translateY(0);
+}
+button {
+  border: 6px solid #fff;
+}
