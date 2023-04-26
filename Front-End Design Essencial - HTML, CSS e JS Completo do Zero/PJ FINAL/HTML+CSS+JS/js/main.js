@@ -42,28 +42,3 @@ var waypoint = new Waypoint({
   offset: "80%",
 });
 
-//PORTFOLIO SLIDER
-
-//Declarando variáveis do slider
-var sliderContainer = document.querySelector(".pj-slider-container");
-var sliderList = document.querySelector(".pj-slider-list");
-var sliderItem = document.querySelectorAll(".pj-slider-item");
-var sliderListWidth = null;
-
-//Capturando larguras individuais
-var containerWidth = sliderContainer.parentElement.offsetWidth;
-
-//Passando larguras dinâmicas
-sliderContainer.style.width = containerWidth + "px";
-
-for (var p = 0; p < sliderItem.length; p++) {
-  sliderItem[p].style.width = containerWidth + "px";
-  var sliderItemWidth = sliderItem[p].offsetWidth;
-
-  sliderListWidth += sliderItemWidth;
-  console.log(sliderListWidth);
-}
-
-sliderList.style.width = sliderListWidth + "px";
-
-//Fazendo Animaçao do Slider onClick

@@ -72,6 +72,18 @@ label {
   }
 }
 
+@keyframes scaleRight {
+  to {
+    transform: scaleX(1)
+  }
+}
+
+@keyframes scaleUp {
+  to {
+    transform: scale(1)
+  }
+}
+
 @media screen and (min-width: 320px) {
 
   .pj-page-wrapper,
@@ -176,6 +188,7 @@ label {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 900;
   }
 
   .pj-logo {
@@ -432,12 +445,15 @@ label {
     color: #bcbcbc;
   }
 
+  .pj-items-counter span:nth-child(2) {
+    color: #4D4C4C;
+  }
+
   ion-icon {
     font-size: 32px;
   }
 
   .pj-slider-container {
-    background-color: white;
     display: block;
     overflow: hidden;
   }
@@ -446,7 +462,6 @@ label {
     width: auto;
     height: 700px;
     display: block;
-    background-color: deeppink;
     list-style: none;
   }
 
@@ -454,6 +469,48 @@ label {
     display: block;
     height: 500px;
     float: left;
+    margin-top: calc(26vh - 75px);
+  }
+
+  .pj-portfolio-item-info {
+    width: calc(100% - 75px);
+    display: table;
+    margin-top: 73px;
+  }
+
+  .pj-portfolio-item-thumb {
+    width: 100%;
+    display: table;
+    padding: 75px 0 19px 0;
+    position: relative;
+  }
+
+  .pj-portfolio-item-thumb>button {
+    margin-top: 17px;
+    margin-right: 75px;
+    float: right;
+  }
+
+  .pj-portfolio-item-box {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #2C2C2C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+
+
+  .pj-portfolio-item-thumb img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: -75px;
+    transform: scale(0)
   }
 }
 
@@ -525,6 +582,16 @@ label {
   border: none;
   transition: all 0.2s ease-out;
   text-transform: lowercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.pj-btn ion-icon {
+  font-size: 21px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px;
+  margin-top: -3px;
 }
 
 .pj-btn-block {
@@ -533,6 +600,7 @@ label {
 }
 
 .pj-btn-small {
+  line-height: 28px;
   height: 28px;
   padding: 0 20px;
   border-radius: 14px;
@@ -540,6 +608,7 @@ label {
 }
 
 .pj-btn-medium {
+  line-height: 38px;
   height: 38px;
   padding: 0 27px;
   border-radius: 19px;
@@ -547,6 +616,7 @@ label {
 }
 
 .pj-btn-large {
+  line-height: 45px;
   height: 45px;
   padding: 0 35px;
   border-radius: 23px;
@@ -580,7 +650,11 @@ label {
   font-weight: normal;
 }
 
-.pj-title-big {
+.pj-title-large {
+  font-size: 64px;
+}
+
+.pj-title-xlarge {
   font-size: 120px;
 }
 
@@ -660,6 +734,46 @@ label {
   padding-left: 15px;
 }
 
+.pj-mar-30 {
+  margin: 30px;
+}
+
+.pj-mar-top-30 {
+  margin-top: 30px;
+}
+
+.pj-mar-right-30 {
+  margin-right: 30px;
+}
+
+.pj-mar-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.pj-mar-left-30 {
+  margin-left: 30px;
+}
+
+.pj-pad-30 {
+  padding: 30px;
+}
+
+.pj-pad-top-30 {
+  padding-top: 30px;
+}
+
+.pj-pad-right-30 {
+  padding-right: 30px;
+}
+
+.pj-pad-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.pj-pad-left-30 {
+  padding-left: 30px;
+}
+
 .pj-full-height {
   height: 100vh;
   position: relative;
@@ -689,6 +803,18 @@ label {
 
 .pj-fade-out {
   animation: fadeOut 2s forwards ease-out;
+}
+
+.pj-fade-from-left {
+  animation: fadeFromLeft 2s 0.7s forwards cubic-bezier(0, 1.01, .32, 1);
+}
+
+.pj-scale-right {
+  animation: scaleRight 0.7s 0.2s forwards cubic-bezier(0, 1.01, .32, 1);
+}
+
+.pj-scale-up {
+  animation: scaleUp 0.5s 0.5s forwards cubic-bezier(0, 1.01, .32, 1);
 }
 
 .pj-no-radius-left {
