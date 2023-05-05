@@ -9,30 +9,30 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <title>Lucas Sckenal - UX/UI Designer</title>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <title>Lucas Sckenal - Front-End</title>
 </head>
 
 <body>
 
+    <div class="pj-trigger-topbar"></div>
+    <div class="border-top-left"></div>
+    <div class="border-bottom-right"></div>
+
     <div class="pj-preloader">
         <div class="pj-preloader-inner">
             <img src="images/lemon-loader.svg" class="pj-mar-bottom-15" />
-            <p class="pj-text-light pj-mar-top-15">Aguarde um pouquinho ... Estou preparando o Site</p>
-        </div>
-    </div>
-    <div class="pj-overlay"></div>
-
-    <div class="pj-modal pj-bg-black">
-        <div class="pj-modal-header">
-            <h1 class="pj-title pj-text-purple"></h1>
+            <p class="pj-text-light pj-mar-top-15">Aguarde um pouquinho … Estou preparando a limonada</p>
         </div>
     </div>
 
     <div class="pj-overlay pj-toggle-modal"></div>
+    <div class="pj-menu-overlay pj-toggle-menu"></div>
 
     <div class="pj-modal pj-bg-black" id="pj-modal-orcamento">
         <div class="pj-modal-header">
-            <h1 class="pj-title pj-text-light-purple">
+            <h1 class="pj-title pj-text-purple pj-mar-bottom-15">
                 Solicite um orçamento
             </h1>
 
@@ -53,23 +53,23 @@
                 <div class="col-sm-12">
                     <form class="pj-form">
                         <div class="row">
-                            <div class="col-sm-12 col-md-6 pj-mar-bottom-15">
+                            <div class="col-sm-12 col-md-6">
                                 <label for="Nome" class="pj-text-light">Nome</label>
                                 <input type="text" name="Nome" id="pj-nome" class="pj-field" />
                             </div>
-                            <div class="col-sm-12 col-md-6 pj-mar-bottom-15">
+                            <div class="col-sm-12 col-md-6">
                                 <label for="Email" class="pj-text-light">Email</label>
                                 <input type="email" name="Email" id="pj-email" class="pj-field" />
                             </div>
-                            <div class="col-sm-12 col-md-6 pj-mar-bottom-15">
+                            <div class="col-sm-12 col-md-6">
                                 <label for="Telefone" class="pj-text-light">Telefone</label>
                                 <input type="tel" name="Telefone" id="pj-telefone" class="pj-field" />
                             </div>
-                            <div class="col-sm-12 col-md-6 pj-mar-bottom-15">
+                            <div class="col-sm-12 col-md-6">
                                 <label for="Site" class="pj-text-light">Site</label>
                                 <input type="text" name="Site" id="pj-site" class="pj-field" />
                             </div>
-                            <div class="col-sm-12 col-md-12 pj-mar-top-15 pj-mar-bottom-15">
+                            <div class="col-sm-12 col-md-12 pj-mar-top-15">
                                 <label for="Mensagem" class="pj-text-light">Descreva abaixo o projeto na qual você
                                     precisa de orçamento:</label>
                                 <textarea id="pj-mensagem" name="Mensagem" rows="8" class="pj-textarea"></textarea>
@@ -89,16 +89,26 @@
     </div>
 
     <header class="pj-topbar">
-        <div class="pj-logo">
-            <img src="images/logo.svg" alt="Logo João Lemon UX/UI Designer" />
+        <div class="pj-logo pj-logo-big">
+            <img src="images/logo.svg" alt="Logo Lucas Sckenal Front-End" />
         </div>
 
         <nav class="pj-menu">
             <a href="#">Home</a>
-            <a href="Pages/Portfolio.html">Portfolio</a>
-            <a href="Pages/Sobre.html">Sobre</a>
+            <a href="pages/portfolio.html">Portfolio</a>
+            <a href="pages/sobre.html">Sobre</a>
         </nav>
     </header>
+
+    <button class="pj-btn-menu-mob pj-toggle-menu">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <nav class="pj-menu-mob pj-menu-is-closed">
+        <a href="#">Home</a>
+        <a href="pages/portfolio.html">Portfolio</a>
+        <a href="pages/sobre.html">Sobre</a>
+    </nav>
 
     <div class="pj-contact-info pj-bg-black pj-text-light">
         <div class="pj-contact-info-inner">
@@ -113,7 +123,7 @@
                     <img src="images/icon-twitter.svg" alt="Twitter" />
                 </a>
                 <a href="#" class="pj-social">
-                    <img src="images/icon-github.svg" alt="github" />
+                    <img src="../images/icon-github.svg" alt="Github" />
                 </a>
             </div>
         </div>
@@ -128,22 +138,21 @@
 
     <div class="pj-page-wrapper">
 
-        <section class="pj-full-height pj-first-section" id="pj-home-presentation">
+        <section class="pj-full-height pj-first-section pj-home-presentation" id="pj-home-presentation">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 col-md-3 offset-md-2 pj-display-text">
+                    <div
+                        class="col-sm-12 col-md-10 offset-md-1 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2 pj-display-text">
 
-                        <h1 class="pj-title pj-text-purple pj-title-xlarge ">Olá!</h1>
+                        <h1 class="pj-title pj-text-purple pj-title-xlarge">Olá!</h1>
 
-                        <p class="pj-text-light">
-                            Meu nome é
-                            <span class="pj-text-light-purple">Lucas Sckenal</span>, Sou
-                            Desenvolvedor de
-                            <span class="pj-text-light-purple"> Front-end </span> Nulla
+                        <p class="pj-text-light">Meu nome é <span class="pj-text-purple">Lucas Sckenal</span>, Sou
+                            Desenvolvedor de<span class="pj-text-light-purple"> Front-end </span> Nulla
                             vulputate, ex in tincidunt consequat, dui metus luctus purus, ut
                             dapibus quam augue sit amet leo. Phasellus sit amet purus in
                             elit efficitur viverra.
                         </p>
+
                         <button class="pj-btn pj-btn-large pj-btn-purple pj-mar-top-15 pj-toggle-modal">solicite um
                             orçamento</button>
                     </div>
@@ -159,12 +168,18 @@
         <section class="pj-full-height" id="pj-home-portfolio">
             <div class="container-fluid pj-no-padding">
                 <div class="row">
-                    <div class="col-sm-2">
+                    <div class="col-sm-12 d-block d-sm-block d-lg-none pj-mar-top-30 pj-pad-top-30">
+                        <h2 class="pj-title-large pj-text-purple pj-title pj-text-center">Projetos Selecionados</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-lg-2 order-2 order-sm-2 order-lg-1">
                         <div class="pj-portfolio-navigator">
-                            <div class="pj-navigator-counter">
-                                <span class="pj-text-light-purple">01</span>
+                            <div class="pj-navigator-counter d-none d-sm-none d-lg-block">
+                                <span class="pj-text-purple">01</span>
                             </div>
-                            <nav class="pj-item-navigator">
+                            <nav class="pj-item-navigator d-none d-sm-none d-lg-block">
                                 <a href="#" class="pj-item-active" data-nav="1"></a>
                                 <a href="#" data-nav="2"></a>
                                 <a href="#" data-nav="3"></a>
@@ -189,128 +204,128 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-10">
+                    <div class="col-sm-12 col-lg-10 order-1 order-sm-1 order-lg-2">
                         <div class="pj-slider-container pj-full-height">
-                            <ul class="pj-slider-list">
-                                <li class="pj-slider-item pj-slide-active" data-slide="1">
+                            <ul class="pj-slider-list pj-full-height">
+                                <li class="pj-portfolio-item pj-slide-active" data-slide="1">
                                     <div class="row">
-                                        <div class="col-sm-5">
-                                            <div class="pj-portfolio-item-info pj-text-light">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
+                                            <div class="pj-portfolio-item-info pj-text-light pj-fade-from-left">
                                                 <h1 class="pj-title pj-title-large pj-mar-bottom-15">Startup Rocketz
                                                     Website</h1>
                                                 <p class="pj-mar-bottom-30">UX, UI e WordPress para aceleradora de
                                                     startups.</p>
-                                                <button class="pj-btn pj-btn-large pj-btn-purple">ver projeto</button>
+                                                <a href="#" class="pj-btn pj-btn-large pj-btn-purple">ver projeto</a>
                                             </div>
                                         </div>
-                                        <div class="col-sm-7">
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
                                             <div class="pj-portfolio-item-thumb">
-                                                <div class="pj-portfolio-item-box pj-scale-right">
+                                                <div
+                                                    class="pj-portfolio-item-box d-none d-sm-none d-lg-block pj-scale-right">
                                                 </div>
                                                 <img src="images/thumb-1.jpg" alt="Startup Rocketz"
-                                                    title="Startup Rocketz" class="pj-scale-up">
-                                                <button
-                                                    class="pj-btn pj-btn-medium pj-btn-dark pj-text-light-purple">visitar
-                                                    site <ion-icon name="share-alt"></ion-icon></button>
+                                                    title="Startup Rocketz" class="pj-scale-up" />
+                                                <a href="#" class="pj-btn pj-btn-medium pj-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="pj-slider-item" data-slide="2">
+                                <li class="pj-portfolio-item" data-slide="2">
                                     <div class="row">
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
                                             <div class="pj-portfolio-item-info pj-text-light">
                                                 <h1 class="pj-title pj-title-large pj-mar-bottom-15">Manage It!
                                                     Aplicativo Mobile</h1>
                                                 <p class="pj-mar-bottom-30">UX, UI e Protipação para aplicativo mobile.
                                                 </p>
-                                                <button class="pj-btn pj-btn-large pj-btn-purple">ver projeto</button>
+                                                <a href="#" class="pj-btn pj-btn-large pj-btn-purple">ver projeto</a>
                                             </div>
                                         </div>
-                                        <div class="col-sm-7">
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
                                             <div class="pj-portfolio-item-thumb">
-                                                <div class="pj-portfolio-item-box"></div>
+                                                <div class="pj-portfolio-item-box d-none d-sm-none d-lg-block"></div>
                                                 <img src="images/thumb-2.jpg" alt="Manage It!" title="Manage It!" />
-                                                <button
-                                                    class="pj-btn pj-btn-medium pj-btn-dark pj-text-light-purple">visitar
-                                                    site <ion-icon name="share-alt"></ion-icon></button>
+                                                <a href="#" class="pj-btn pj-btn-medium pj-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </li>
-                                <li class="pj-slider-item" data-slide="3">
+                                <li class="pj-portfolio-item" data-slide="3">
                                     <div class="row">
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
                                             <div class="pj-portfolio-item-info pj-text-light">
                                                 <h1 class="pj-title pj-title-large pj-mar-bottom-15">Vinyassa!
                                                     Aplicativo Mobile</h1>
                                                 <p class="pj-mar-bottom-30">UX, UI e Protipação para aplicativo mobile.
                                                 </p>
-                                                <button class="pj-btn pj-btn-large pj-btn-purple">ver projeto</button>
+                                                <a href="#" class="pj-btn pj-btn-large pj-btn-purple">ver projeto</a>
                                             </div>
                                         </div>
-                                        <div class="col-sm-7">
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
                                             <div class="pj-portfolio-item-thumb">
-                                                <div class="pj-portfolio-item-box"></div>
+                                                <div class="pj-portfolio-item-box d-none d-sm-none d-lg-block"></div>
                                                 <img src="images/thumb-3.jpg" alt="Vinyassa App" title="Vinyassa App" />
-                                                <button
-                                                    class="pj-btn pj-btn-medium pj-btn-dark pj-text-light-purple">visitar
-                                                    site <ion-icon name="share-alt"></ion-icon></button>
+                                                <a href="#" class="pj-btn pj-btn-medium pj-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </li>
-                                <li class="pj-slider-item" data-slide="4">
+                                <li class="pj-portfolio-item" data-slide="4">
                                     <div class="row">
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
                                             <div class="pj-portfolio-item-info pj-text-light">
                                                 <h1 class="pj-title pj-title-large pj-mar-bottom-15">Conteúdo é Rei!
                                                     Website para agência.</h1>
                                                 <p class="pj-mar-bottom-30">Website para agência de conteúdo digital.
                                                 </p>
-                                                <button class="pj-btn pj-btn-large pj-btn-purple">ver projeto</button>
+                                                <a href="#" class="pj-btn pj-btn-large pj-btn-purple">ver projeto</a>
                                             </div>
                                         </div>
-                                        <div class="col-sm-7">
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
                                             <div class="pj-portfolio-item-thumb">
-                                                <div class="pj-portfolio-item-box"></div>
+                                                <div class="pj-portfolio-item-box d-none d-sm-none d-lg-block"></div>
                                                 <img src="images/thumb-4.jpg" alt="Conteúdo é Rei!"
                                                     title="Conteúdo é Rei!" />
-                                                <button
-                                                    class="pj-btn pj-btn-medium pj-btn-dark pj-text-light-purple">visitar
-                                                    site <ion-icon name="share-alt"></ion-icon></button>
+                                                <a href="#" class="pj-btn pj-btn-medium pj-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
                                             </div>
                                         </div>
                                     </div>
 
                                 </li>
-                                <li class="pj-slider-item" data-slide="5">
+                                <li class="pj-portfolio-item" data-slide="5">
                                     <div class="row">
-                                        <div class="col-sm-5">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-1">
                                             <div class="pj-portfolio-item-info pj-text-light">
-                                                <h1 class="pj-title pj-title-large pj-mar-bottom-15">Controle Total.
-                                                    Web App</h1>
+                                                <h1 class="pj-title pj-title-large pj-mar-bottom-15">Controle Total. Web
+                                                    App</h1>
                                                 <p class="pj-mar-bottom-30">UX, UI e Protipação para aplicativo web.</p>
-                                                <button class="pj-btn pj-btn-large pj-btn-purple">ver projeto</button>
+                                                <a href="#" class="pj-btn pj-btn-large pj-btn-purple">ver projeto</a>
                                             </div>
                                         </div>
-                                        <div class="col-sm-7">
+                                        <div
+                                            class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-2">
                                             <div class="pj-portfolio-item-thumb">
-                                                <div class="pj-portfolio-item-box"></div>
+                                                <div class="pj-portfolio-item-box d-none d-sm-none d-lg-block"></div>
                                                 <img src="images/thumb-5.jpg" alt="Controle Total"
                                                     title="Controle Total" />
-                                                <button
-                                                    class="pj-btn pj-btn-medium pj-btn-dark pj-text-light-purple">visitar
-                                                    site <ion-icon name="share-alt"></ion-icon></button>
+                                                <a href="#" class="pj-btn pj-btn-medium pj-btn-dark">visitar site
+                                                    <ion-icon name="share-alt"></ion-icon></a>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
 
                             </ul>
-
                         </div>
                     </div>
 
@@ -319,13 +334,23 @@
         </section>
 
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        // Animando Elementos on Scroll com Waypoints
+        var myScrollDown = document.querySelector('.pj-scroll-down');
+        var waypoint = new Waypoint({
+            element: myScrollDown,
+            handler: function () {
+                myScrollDown.classList.toggle('pj-fade-out');
+            },
+            offset: '80%'
+        });
+    </script>
 </body>
 
 </html>
